@@ -8,6 +8,18 @@ article {
 	padding:1em
 }
 
+img {
+	width: 100%;
+}
+video {
+	width: 100%;
+}
+.ivenh {
+	color:rgb(7, 7, 7);
+}
+.iven {
+	margin-bottom: 2em;
+}
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -15,19 +27,26 @@ article {
 	align-items: stretch;
 	
 }
-	.row > * {
+	.row > .fifty {
 		width: 50%;
 		box-sizing: border-box;
 		padding: 0 1em 0 0;
 	}
+	.row > .thirty {
+		width: 32%;
+		box-sizing: border-box;
+		padding: 0em 1em 0 0;
+		margin-left:auto;
+		margin-right:auto;
+		font-size: 25px;
+	}
+	.thirty > *{
+		
+		overflow: hidden;
+		text-overflow: ellipsis;
+		
+	}
 
-
-img {
-	width: 100%;
-}
-video {
-	width: 100%;
-}
 
 .box {
 	background: #fff;
@@ -76,9 +95,10 @@ a:hover {
 			width: 1200px;
 			font-size:25px;
 		}
-
+		.row > .thirty{
+			font-size: 20px;
+		}
 		
-
 	}
 
 	@media screen and (max-width: 1280px) {
@@ -95,9 +115,11 @@ a:hover {
 
 		.container {
 			width: 100%;
-			font-size:17px;
+			font-size:20px;
 		}
-
+		.row > .thirty{
+			width:100%;
+		}
 		
 
 	}
@@ -106,14 +128,17 @@ a:hover {
 
 		.container {
 			width: 100%;
-			font-size:15px;
+			font-size:14px;
 			max-width: calc(100% - 30px);
 		}
 
 			.container.medium {
 				width: 100%;
 			}
-
+		.row > .thirty{
+			width:100%;
+			font-size: 17px;
+		}
 	}
 
 
